@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-lY-iMJ">
+                                <rect key="frame" x="50" y="70" width="500" height="30"/>
+                                <state key="normal" title="Show Alert"/>
+                                <connections>
+                                    <action selector="showAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39a-H0-Kp0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yje-cf-i4I">
+                                <rect key="frame" x="85" y="132" width="460" height="30"/>
+                                <state key="normal" title="Show Alert sheet"/>
+                                <connections>
+                                    <action selector="showAlertSheetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wym-M9-vS2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHC-w9-WiO">
+                                <rect key="frame" x="64" y="214" width="460" height="30"/>
+                                <state key="normal" title="Alert with form"/>
+                                <connections>
+                                    <action selector="alertWithFormAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0I-41-mHG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kHC-w9-WiO" firstAttribute="top" secondItem="Yje-cf-i4I" secondAttribute="bottom" constant="50" id="5AN-Bq-3yr"/>
+                            <constraint firstItem="Yje-cf-i4I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Jfe-Cx-upw"/>
+                            <constraint firstItem="Yje-cf-i4I" firstAttribute="top" secondItem="5ew-lY-iMJ" secondAttribute="bottom" constant="50" id="M5a-39-Fm6"/>
+                            <constraint firstItem="5ew-lY-iMJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ZpE-ZC-OlM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kHC-w9-WiO" secondAttribute="trailing" constant="50" id="cbe-Ie-yoL"/>
+                            <constraint firstItem="kHC-w9-WiO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="hdv-Y6-xDU"/>
+                            <constraint firstAttribute="trailing" secondItem="5ew-lY-iMJ" secondAttribute="trailing" constant="50" id="rbY-lV-dZv"/>
+                            <constraint firstItem="5ew-lY-iMJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="so7-hH-pZD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yje-cf-i4I" secondAttribute="trailing" constant="50" id="svI-NV-Lig"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lertWithForm" destination="kHC-w9-WiO" id="PfR-bG-pBZ"/>
+                        <outlet property="showActionSheet" destination="Yje-cf-i4I" id="ian-4U-cVq"/>
+                        <outlet property="showAlert" destination="5ew-lY-iMJ" id="44P-jw-Jbj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
