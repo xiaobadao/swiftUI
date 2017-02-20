@@ -1,14 +1,14 @@
 //
-//  calendarUITests.swift
-//  calendarUITests
+//  datePikerUITests.swift
+//  datePikerUITests
 //
-//  Created by apple on 2017/2/20.
-//  Copyright © 2017年 Chuckie. All rights reserved.
+//  Created by ww on 17/2/20.
+//  Copyright © 2017年 zww. All rights reserved.
 //
 
 import XCTest
 
-class calendarUITests: XCTestCase {
+class datePikerUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

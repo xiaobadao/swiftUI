@@ -1,15 +1,15 @@
 //
-//  calendarTests.swift
-//  calendarTests
+//  datePikerTests.swift
+//  datePikerTests
 //
-//  Created by apple on 2017/2/20.
-//  Copyright © 2017年 Chuckie. All rights reserved.
+//  Created by ww on 17/2/20.
+//  Copyright © 2017年 zww. All rights reserved.
 //
 
 import XCTest
-@testable import calendar
+@testable import datePiker
 
-class calendarTests: XCTestCase {
+class datePikerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class calendarTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
